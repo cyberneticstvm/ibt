@@ -43,7 +43,7 @@
                     <!-- end logo -->
                     <!-- start social media -->
                     <div class="col-lg-4 col-md-5 text-center">
-                        <span class="alt-font text-small margin-20px-right md-margin-15px-right">On social networks</span>
+                        <span class="alt-font text-small margin-20px-right md-margin-15px-right"><a href="{{ route('index') }}">Legal Notices</a></span>
                         <div class="social-icon-style-8 d-inline-block align-middle">
                             <ul class="small-icon mb-0">
                                 <li><a class="facebook" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
