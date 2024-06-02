@@ -8,7 +8,7 @@
                 <div class="alt-font text-extra-dark-gray text-uppercase font-weight-700 letter-spacing-minus-2 title-large text-center">IBT Global Trading</div>
                 <div class="separator-line-horrizontal-full w-100 margin-35px-tb md-margin-25px-tb sm-margin-20px-tb bg-extra-dark-gray"></div>
                 <span class="text-dark-gray text-extra-large font-weight-300 margin-35px-bottom d-block md-margin-25px-bottom sm-margin-15px-bottom text-justify">Welcome to IBT Global Precious Metal Trading, specializing in the trading, import, and export of precious metals. We provide secure and reliable services for professionals and institutions in the industry. Our commitment to excellence ensures that our clients receive the highest quality service and support for all their precious metal trading needs.</span>
-                <a href="https://1.envato.market/g7jrr" target="_blank" class="btn btn-dark-gray btn-medium">Purchase Now</a>
+                <a href="{{ route('index') }}" class="btn btn-dark-gray btn-medium">Know More</a>
             </div>
             <div class="down-section text-center">
                 <a href="#why" class="section-link up-down-ani"><i class="ti-mouse icon-small bounce text-deep-pink"></i></a>
@@ -100,34 +100,34 @@
                 <div class="padding-ten-right md-padding-ten-lr sm-no-padding-lr">
                     <div class="icon-box d-table w-100 mx-auto mx-lg-0 sm-w-100">
                         <div class="icon-box-holder align-middle d-table-cell position-relative">
-                            <i class="icon-chat icon-medium text-extra-medium-gray"></i>
-                            <span class="text-large line-height-24 alt-font">Creativity.<br>Discover talent.</span>
+                            <i class="icon-map icon-medium text-extra-medium-gray"></i>
+                            <span class="text-large line-height-24 alt-font">Location.<br>MAJID SULTAN BLDG Al Muteena, DEIRA G01-010, PO Box: 60418.</span>
                         </div>
                     </div>
                     <div class="icon-box d-table w-100 mx-auto mx-lg-0 sm-w-100">
                         <div class="icon-box-holder align-middle d-table-cell position-relative">
-                            <i class="icon-pricetags icon-medium text-extra-medium-gray"></i>
-                            <span class="text-large line-height-24 alt-font">Technology.<br>Expert analysis.</span>
+                            <i class="icon-envelope icon-medium text-extra-medium-gray"></i>
+                            <span class="text-large line-height-24 alt-font">Email.<br><a href="mailto:info@ibtglobalpreciousmetal.com">info@ibtglobalpreciousmetal.com</a></span>
                         </div>
                     </div>
                     <div class="icon-box d-table w-100 mx-auto mx-lg-0 sm-w-100">
                         <div class="icon-box-holder align-middle d-table-cell position-relative">
-                            <i class="icon-desktop icon-medium text-extra-medium-gray"></i>
-                            <span class="text-large line-height-24 alt-font">Discover.<br>Chart the course.</span>
+                            <i class="icon-mobile icon-medium text-extra-medium-gray"></i>
+                            <span class="text-large line-height-24 alt-font">Contact.<br><a href="callto:+9711234567">+971 123 4567</a></span>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-xl-4 col-md-6 col-sm-8 sm-margin-five-tb wow animate__fadeIn" data-wow-delay="0.2s">
                 <div class="md-padding-ten-right md-no-padding-right">
-                    <img src="https://via.placeholder.com/783x820" alt="" class="w-100">
+                    <img src="{{ asset('/assets/images/contact.svg') }}" alt="IBT Global Trading" class="w-100">
                 </div>
             </div>
             <div class="col-xl-4 col-sm-10 lg-margin-seven-top wow animate__fadeIn" data-wow-delay="0.4s">
                 <div class="padding-ten-left lg-no-padding-lr text-center text-lg-start md-padding-30px-lr sm-no-padding-lr">
                     <span class="text-extra-large text-medium-gray alt-font d-block margin-20px-bottom md-margin-15px-bottom">IBT Global Trading believe in the power of ideas.</span>
                     <p>"For any information requests, please contact us via the form below or use the provided contact details. Our team is available to assist you with any inquiries and provide the support you need."</p>
-                    <a href="portfolio-full-width-grid-with-icon.html" class="btn btn-very-small btn-transparent-white">View Latest Portfolio</a>
+                    <a href="{{ route('index') }}" class="btn btn-very-small btn-transparent-white">Contact Now</a>
                 </div>
             </div>
         </div>
