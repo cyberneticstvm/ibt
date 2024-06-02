@@ -23478,8 +23478,12 @@
 }
 
 @media (max-width: 575px) {
+    .sm-background-image-center {
+        margin-top: 10% !important;
+    }
+
     .sidebar-nav .logo-holder img {
-        max-height: 26px;
+        max-height: 35px;
     }
 
     /* grid */
