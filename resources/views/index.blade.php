@@ -52,79 +52,17 @@
             </div>
             <!-- end feature box item -->
         </div>
-    </div>
-</section>
-<!-- end feature box section -->
-<!-- feature box section -->
-<section class="wow animate__fadeIn lg-padding-two-lr md-no-padding-lr">
-    <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3">
-            <!-- start features box item -->
-            <div class="col margin-six-bottom md-margin-50px-bottom sm-margin-40px-bottom wow animate__fadeInUp last-paragraph-no-margin">
-                <div class="feature-box-5 position-relative">
-                    <i class="icon-desktop text-medium-gray icon-medium"></i>
-                    <div class="feature-content">
-                        <div class="text-extra-dark-gray margin-10px-bottom alt-font font-weight-600">Elegant / Unique design</div>
-                        <p class="d-inline-block sm-w-90">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p>
-                    </div>
+        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2">
+            <!-- start feature box item -->
+            <div class="col-sm-8 feature-box-1 md-margin-60px-bottom sm-margin-40px-bottom wow animate__fadeIn" data-wow-delay="0.6s">
+                <div class="d-flex align-items-center margin-15px-bottom alt-font">
+                    <h3 class="char-value letter-spacing-minus-1 text-medium-gray font-weight-300 mb-0">04.</h3>
+                    <span class="text-large line-height-22 padding-20px-left w-100">Facilitator.</span>
                 </div>
+                <p class="w-90 lg-w-100">"We leverage our experience to facilitate exchanges between buyers and sellers of precious metals, ensuring smooth and efficient transactions. Our facilitation services are designed to bridge the gap between parties, ensuring successful and reliable transactions."</p>
+                <div class="separator-line-horrizontal-medium-light3 bg-deep-pink margin-5px-top float-start"></div>
             </div>
-            <!-- end features box item -->
-            <!-- start features box item -->
-            <div class="col margin-six-bottom md-margin-50px-bottom sm-margin-40px-bottom wow animate__fadeInUp last-paragraph-no-margin" data-wow-delay="0.2s">
-                <div class="feature-box-5 position-relative">
-                    <i class="icon-pricetags text-medium-gray icon-medium"></i>
-                    <div class="feature-content">
-                        <div class="text-extra-dark-gray margin-10px-bottom alt-font font-weight-600">Different Layout Type</div>
-                        <p class="d-inline-block sm-w-90">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- end features box item -->
-            <!-- start features box item -->
-            <div class="col margin-six-bottom md-margin-50px-bottom sm-margin-40px-bottom wow animate__fadeInUp last-paragraph-no-margin" data-wow-delay="0.4s">
-                <div class="feature-box-5 position-relative">
-                    <i class="icon-chat text-medium-gray icon-medium"></i>
-                    <div class="feature-content">
-                        <div class="text-extra-dark-gray margin-10px-bottom alt-font font-weight-600">Make it Simple</div>
-                        <p class="d-inline-block sm-w-90">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- end features box item -->
-            <!-- start features box item -->
-            <div class="col lg-margin-six-bottom md-margin-50px-bottom sm-margin-40px-bottom wow animate__fadeInUp last-paragraph-no-margin" data-wow-delay="0.6s">
-                <div class="feature-box-5 position-relative ">
-                    <i class="icon-mobile text-medium-gray icon-medium"></i>
-                    <div class="feature-content">
-                        <div class="text-extra-dark-gray margin-10px-bottom alt-font font-weight-600">True Responsiveness</div>
-                        <p class="d-inline-block sm-w-90">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- end features box item -->
-            <!-- start features box item -->
-            <div class="col xs-margin-40px-bottom wow animate__fadeInUp last-paragraph-no-margin" data-wow-delay="0.8s">
-                <div class="feature-box-5 position-relative">
-                    <i class="icon-target text-medium-gray icon-medium"></i>
-                    <div class="feature-content">
-                        <div class="text-extra-dark-gray margin-10px-bottom alt-font font-weight-600">Testing for Perfection</div>
-                        <p class="d-inline-block sm-w-90">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- end features box item -->
-            <!-- start features box item -->
-            <div class="col wow animate__fadeInUp last-paragraph-no-margin" data-wow-delay="1s">
-                <div class="feature-box-5 position-relative">
-                    <i class="icon-tools-2 text-medium-gray icon-medium"></i>
-                    <div class="feature-content">
-                        <div class="text-extra-dark-gray margin-10px-bottom alt-font font-weight-600">Advanced Options</div>
-                        <p class="d-inline-block sm-w-90">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- end features box item -->
+            <!-- end feature box item -->
         </div>
     </div>
 </section>
@@ -134,22 +72,20 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-sm-8 col-xl-6 col-xxl-5 margin-eight-bottom md-margin-40px-bottom sm-margin-30px-bottom text-center">
-                <h5 class="alt-font font-weight-700 text-extra-dark-gray margin-20px-bottom text-uppercase">About Agency</h5>
-                <p class="mx-auto mb-0">We are idea-driven, working with a strong focus on design and user experience. Our projects should engage your audience, we want to create wonderful digital things that people love to be part of and use.</p>
+                <h5 class="alt-font font-weight-700 text-extra-dark-gray margin-20px-bottom text-uppercase">About IBT Global Trading</h5>
             </div>
         </div>
         <div class="row">
             <div class="col-xl-3 col-sm-6 text-center ps-0 lg-padding-15px-left md-no-padding wow animate__fadeIn">
-                <img src="https://via.placeholder.com/600x909" alt="" class="w-100">
+                <img src="{{ asset('/assets/images/1.svg') }}" alt="IBT Global Trading" class="w-100">
             </div>
             <div class="col-xl-3 col-sm-6 text-center ps-0 lg-padding-15px-left md-no-padding wow animate__fadeIn" data-wow-delay="0.2s">
-                <img src="https://via.placeholder.com/600x909" alt="" class="w-100">
+                <img src="{{ asset('/assets/images/2.svg') }}" alt="IBT Global Trading" class="w-100">
             </div>
             <div class="col-xl-6 ps-0 lg-margin-15px-top md-no-margin-top md-no-padding-right wow animate__fadeIn" data-wow-delay="0.4s">
                 <div class="d-flex flex-column align-content-center justify-content-center bg-extra-dark-gray padding-twelve-all md-padding-ten-all text-center text-lg-start sm-padding-five-lr sm-padding-fifteen-tb w-100 h-100">
-                    <p class="text-extra-large text-medium-gray font-weight-300">We always stay with our clients and respect their business. We deliver 100% and provide instant response.</p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum has been the industry. Lorem Ipsum has been the industry's standard dummy text since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                    <a href="about-us-simple.html" class="text-uppercase alt-font text-white-2 text-extra-small">Our Company History <i class="fa-solid fa-arrow-right-long margin-5px-left text-deep-pink text-medium position-relative top-2" aria-hidden="true"></i></a>
+                    <p class="text-justify">"IBT Global Trading is dedicated to the trading, import, and export of precious raw materials, particularly gold. With a global presence, we offer tailored solutions for the needs of our professional and institutional clients. Our team of experts brings years of experience in the precious metals market, ensuring that our services are both comprehensive and tailored to meet the specific needs of our clients. Our mission is to facilitate seamless and secure transactions for our clients worldwide."</p>
+                    <a href="{{ route('index') }}" class="text-uppercase alt-font text-white-2 text-extra-small">Our Services <i class="fa-solid fa-arrow-right-long margin-5px-left text-deep-pink text-medium position-relative top-2" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
@@ -189,8 +125,8 @@
             </div>
             <div class="col-xl-4 col-sm-10 lg-margin-seven-top wow animate__fadeIn" data-wow-delay="0.4s">
                 <div class="padding-ten-left lg-no-padding-lr text-center text-lg-start md-padding-30px-lr sm-no-padding-lr">
-                    <span class="text-extra-large text-medium-gray alt-font d-block margin-20px-bottom md-margin-15px-bottom">We're a design studio that believe in the power of ideas.</span>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text Lorem Ipsum has been the industry's standard dummy text.</p>
+                    <span class="text-extra-large text-medium-gray alt-font d-block margin-20px-bottom md-margin-15px-bottom">IBT Global Trading believe in the power of ideas.</span>
+                    <p>"For any information requests, please contact us via the form below or use the provided contact details. Our team is available to assist you with any inquiries and provide the support you need."</p>
                     <a href="portfolio-full-width-grid-with-icon.html" class="btn btn-very-small btn-transparent-white">View Latest Portfolio</a>
                 </div>
             </div>
