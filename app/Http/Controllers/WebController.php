@@ -13,4 +13,12 @@ class WebController extends Controller
         $keywords = "Trading, Import, and Export of Precious Metals";
         return view('index', compact('title', 'description', 'keywords'));
     }
+
+    function priceChart()
+    {
+        $title = "IBT Global Trading - Precious Metals Prices";
+        $description = "IBT Global Precious Metal Trading, specializing in the trading, import, and export of precious metals";
+        $keywords = "Trading, Import, and Export of Precious Metals";
+        return view('price-chart', compact('title', 'description', 'keywords'));
+    }
 }

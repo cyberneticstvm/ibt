@@ -33,7 +33,7 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="{{ route('index') }}" title="Precious Metals Prices">Precious Metals Prices</a>
+                    <a href="{{ route('price.chart') }}" title="Precious Metals Prices">Precious Metals Prices</a>
                 </li>
                 <li class="dropdown">
                     <a href="{{ route('index') }}" title="Contact">Contact</a>
