@@ -46,7 +46,8 @@
                 <p class="font-weight-medium text-4">Consult right now with our experienced team for complete solutions to your trading requirements.</p>
             </div>
             <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="400">
-                <form class="form-style-2" action="{{ route('contact') }}" method="POST">
+                <form class="form-style-2" action="{{ route('contact.submit') }}" method="POST">
+                    @csrf
                     <div class="contact-form-success alert alert-success d-none mt-4">
                         <strong>Success!</strong> Your message has been sent to us.
                     </div>
@@ -55,28 +56,51 @@
                         <strong>Error!</strong> There was an error sending your message.
                         <span class="mail-error-message text-1 d-block"></span>
                     </div>
-
                     <div class="row pb-2 mb-1">
                         <div class="form-group col">
-                            <input type="text" value="" placeholder="Full Name" data-msg-required="Please enter your name." maxlength="100" class="form-control form-control-sm text-3 h-auto py-2" name="name" required>
+                            <input type="text" value="" placeholder="Full Name" data-msg-required="Please enter your name." maxlength="100" class="form-control form-control-sm text-3 h-auto py-2" name="name" value="{{ old('name') }}" required>
+                            @error('name')
+                            <small class="text-danger">{{ $errors->first('name') }}</small>
+                            @enderror
                         </div>
                     </div>
                     <div class="row pb-2 mb-1">
                         <div class="form-group col-lg-6">
-                            <input type="text" value="" placeholder="Contact Number" data-msg-required="Please enter the Contact Number." maxlength="100" class="form-control text-3 h-auto py-2" name="contact" required>
+                            <input type="text" value="" placeholder="Contact Number" data-msg-required="Please enter the Contact Number." maxlength="100" class="form-control text-3 h-auto py-2" name="contact" value="{{ old('contact') }}" required>
+                            @error('contact')
+                            <small class="text-danger">{{ $errors->first('contact') }}</small>
+                            @enderror
                         </div>
                         <div class="form-group col-lg-6">
-                            <input type="email" value="" placeholder="Email Address" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control text-3 h-auto py-2" name="email" required>
+                            <input type="email" value="" placeholder="Email Address" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control text-3 h-auto py-2" name="email" value="{{ old('email') }}" required>
+                            @error('email')
+                            <small class="text-danger">{{ $errors->first('email') }}</small>
+                            @enderror
                         </div>
                     </div>
                     <div class="row pb-2 mb-1">
                         <div class="form-group col">
-                            <textarea maxlength="5000" placeholder="Message" data-msg-required="Please enter your message." rows="8" class="form-control text-3 h-auto py-2" name="message" required></textarea>
+                            <textarea maxlength="5000" placeholder="Message" data-msg-required="Please enter your message." rows="8" class="form-control text-3 h-auto py-2" name="message" value="{{ old('message') }}" required></textarea>
+                            @error('message')
+                            <small class="text-danger">{{ $errors->first('message') }}</small>
+                            @enderror
+                        </div>
+                    </div>
+                    <div class="row pb-2 mb-1">
+                        <div class="col-12">
+                            <div class="captcha">
+                                <span>{!! captcha_img() !!}</span>
+                                <button type="button" class="btn btn-success btn-refresh"><i class="fa fa-refresh"></i></button>
+                            </div>
+                            <input id="captcha" type="text" class="form-control" placeholder="Enter Captcha" name="captcha">
+                            @error('captcha')
+                            <small class="text-danger">{{ $errors->first('captcha') }}</small>
+                            @enderror
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col text-end">
-                            <input type="submit" value="Submit Form" class="btn btn-dark btn-modern text-uppercase font-weight-bold text-2 py-3 btn-px-4" data-loading-text="Loading...">
+                            <input type="submit" value="Submit Form" class="btn btn-submit btn-dark btn-modern text-uppercase font-weight-bold text-2 py-3 btn-px-4" data-loading-text="Loading...">
                         </div>
                     </div>
                 </form>

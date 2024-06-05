@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Exception;
 use Illuminate\Http\Request;
 
 class WebController extends Controller
@@ -52,5 +53,30 @@ class WebController extends Controller
         $description = "IBT Global Precious Metal Trading, specializing in the trading, import, and export of precious metals";
         $keywords = "Trading, Import, and Export of Precious Metals";
         return view('web.legal-notice', compact('title', 'description', 'keywords'));
+    }
+
+    function refreshCaptcha()
+    {
+        return response()->json(['captcha' => captcha_img()]);
+    }
+
+    function contactSubmit(Request $request)
+    {
+        $request->validate(
+            [
+                'name' => 'required',
+                'email' => 'required|email',
+                'contact' => 'required',
+                'message' => 'required',
+                'captcha' => 'required|captcha',
+            ],
+            ['captcha.captcha' => 'Invalid captcha code.']
+        );
+        try {
+            //
+        } catch (Exception $e) {
+            return redirect()->back()->with("error", $e->getMessage())->withInput($request->all());
+        }
+        return redirect()->back()->with("success", "Contact form submitted successfully!");
     }
 }

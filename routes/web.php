@@ -9,7 +9,10 @@ Route::middleware(['web'])->group(function () {
         Route::get('/about', 'about')->name('about');
         Route::get('/our-services', 'service')->name('service');
         Route::get('/contact', 'contact')->name('contact');
+        Route::post('/contact', 'contactSubmit')->name('contact.submit');
         Route::get('/precious-metals-prices', 'priceChart')->name('price.chart');
         Route::get('/legal-notices', 'legal')->name('legal.notice');
+
+        Route::get('/refresh/captcha', 'refreshCaptcha')->name('refresh.captcha');
     });
 });
