@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Exception;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 
 class WebController extends Controller
@@ -60,7 +61,7 @@ class WebController extends Controller
         return response()->json(['captcha' => captcha_img()]);
     }
 
-    function contactSubmit(Request $request)
+    function contactSubmit(Request $request): RedirectResponse
     {
         $request->validate(
             [
