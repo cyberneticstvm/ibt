@@ -48,6 +48,19 @@
             <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="400">
                 <form class="form-style-2" action="{{ route('contact.submit') }}" method="POST">
                     @csrf
+                    @session('success')
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        {{ $value }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    @endsession
+
+                    @session('error')
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        {{ $value }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    @endsession
                     <div class="row pb-2 mb-1">
                         <div class="form-group col">
                             <input type="text" placeholder="Full Name" data-msg-required="Please enter your name." maxlength="100" class="form-control form-control-sm text-3 h-auto py-2" name="name" value="{{ old('name') }}">
