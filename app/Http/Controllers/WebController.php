@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactFormSubmitEmail;
 use Exception;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class WebController extends Controller
 {
@@ -74,7 +76,7 @@ class WebController extends Controller
             ['captcha.captcha' => 'Invalid captcha code.']
         );
         try {
-            //
+            Mail::to('cyberneticstvm@gmail.com')->send(new ContactFormSubmitEmail($request));
         } catch (Exception $e) {
             return redirect()->back()->with("error", $e->getMessage())->withInput($request->all());
         }
