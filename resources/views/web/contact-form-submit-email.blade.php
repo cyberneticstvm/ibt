@@ -8,7 +8,7 @@
 <body>
     Dear IBT,<br />
 
-    <p>You have received new message via websiet contact form.</p><br />
+    <p>You have received new message via websiet contact form.</p>
 
     <p>Name: {{ $data->name }}</p>
     <p>Contact number: {{ $data->contact }}</p>
